@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Selectors for CSS</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <!-- Direct Descendant Selector Example -->
+    <div class="header">
+        <p>This should be the one styled.</p>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#" class="cart">
+            <p>This shouldn't be affected... <span>Are you sure tho?</span></p>
+            <span>Yup! I'm positive!</span>
+        </a>
+    </div>
+
+    <!-- Descendant Selector Example -->
+    <p>This is a quote about CSS</p>
+    <div class="quote">
+        <p>"CSS is like chess. You learn the basics in a day and spend a lifetime mastering it."</p>
+    </div>
+    <p>Chris Coyier (css-tricks.com)</p>
+
+    <!-- Attribute Selector Example -->
+    <form action="/process" method="post">
+        <input type="text" name="username" value="Rebecca">
+        <input type="submit" value="Enter Username">
+    </form>
+</body>
+
+</html>
