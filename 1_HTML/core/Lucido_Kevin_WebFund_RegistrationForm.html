@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <div>
+        <h1>Registration Form</h1>
+    </div>
+
+    <!-- Content -->
+    <div>
+        <form action="/register" method="post">
+            <div>
+                <label for="fn">First Name: *</label>
+                <input type="text" name="fn">
+            </div>
+            <div>
+                <label for="ln">Last Name: *</label>
+                <input type="text" name="ln">
+            </div>
+            <div>
+                <label for="email">Email Address: *</label>
+                <input type="text" name="email">
+            </div>
+            <div>
+                <label for="pw">Password: *</label>
+                <input type="password" name="pw">
+            </div>
+            <div>
+                <label for="confirm-pw">Confirm Password: *</label>
+                <input type="password" name="confirm-pw">
+            </div>
+            <div>
+                <label for="bday">Birthday:</label>
+                <input type="date" name="bday">
+            </div>
+            <div>
+                <label for="gender">Gender:</label><br>
+                <input type="radio" name="gender" value="male" id="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" value="female" id="female">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" value="na" id="female">
+                <label for="na">Prefer not to say</label>
+            </div>
+            <div>
+                <label for="desc">A short description about me:</label><br>
+                <textarea name="desc" id="desc" cols="" rows=""></textarea>
+            </div>
+            <div>
+                <label for="lang">Favorite Language:</label>
+                <select name="lang" id="lang">
+                    <option value="HTML/CSS">HTML/CSS</option>
+                    <option value="Javascript">Javascript</option>
+                    <option value="Python">Python</option>
+                    <option value="Java">Java</option>
+                </select>
+            </div>
+            <div>
+                <input type="checkbox" name="agree">
+                <label for="agree">Yes, I would like to receive email updates</label>
+            </div>
+            <div>
+                <input type="submit" value="Create Account">
+            </div>
+            <p>* Indicates a required field</p>
+        </form>
+    </div>
+</body>
+
+</html>
