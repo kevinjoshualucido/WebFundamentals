@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 20px;
+}
+
+h1, h2 {
+    display: inline-block;
+    vertical-align: top;
+    background-color: cyan;
+    width: 200px;
+}
+
+div {
+    display: block;
+    margin: 10px 0px;
+}
+
+label, input {
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px dotted black;
+}
+
+label {
+    width: 120px;
+}
+input {
+    width: 150px;
+    height: 30px;
+}
+
+p {
+    display: inline-block;
+    vertical-align: top;
+    width: 160px;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: lightcyan;
+    margin: 10px;
+}
