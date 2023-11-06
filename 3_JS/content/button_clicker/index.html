@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Clicker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- header -->
+        <div class="header">
+            <div class="col">
+                <h1><a href="#">Dojonary.</a></h1>
+            </div>
+            <!-- end -->
+            <div class="col-2">
+                <form action="#">
+                    <input type="text" placeholder="Search" id="searchbar">
+                    <button onclick="logOut(this)" id="login-btn">Login</button>
+                </form>
+            </div>
+            <!-- end -->
+        </div>
+        <!-- end -->
+
+        <!-- body -->
+        <div class="body">
+            <div class="col-2">
+                <!-- card -->
+                <div class="card">
+                    <div class="col">
+                        <h2>ninja</h2>
+                        <p class="word"><em>noun</em></p>
+                        <p class="plural">Plural: <em>ninjas</em></p>
+                        <button onclick="alert('Ninja was liked!')" id="like-count-btn">12 Likes</button>
+                    </div>
+                    <div class="col-3">
+                        <p>A practitioner skilled in the <span>Japanese</span> art of <span>ninjutsu</span></p>
+                    </div>
+                </div>
+                <!-- end -->
+                <!-- card -->
+                <div class="card">
+                    <div class="col">
+                        <h2>ninja</h2>
+                        <p class="word"><em>noun</em></p>
+                        <p class="plural">Plural: <em>ninjas</em></p>
+                        <button onclick="alert('Ninja was liked!')" id="like-count-btn">20 Likes</button>
+                    </div>
+                    <div class="col-3">
+                        <p>A <span>programmer</span> who breaks down problems with <span>zen</span>-like focus</p>
+                    </div>
+                </div>
+                <!-- end -->
+            </div>
+            <!-- end -->
+            <!-- card -->
+            <div class="col">
+                <div class="card">
+                    <div class="add-def">
+                        <p id="slogan"><b>Dojonary.</b> is defined by <b>YOU</b></p>
+                        <button onclick="remove(this)" id="add">Add Definition</button>
+                    </div>
+                </div>
+            </div>
+            <!-- end -->
+        </div>
+        <!-- end -->
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
