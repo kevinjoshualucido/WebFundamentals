@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: roboto;
+}
+
+.btn {
+    width: 150px;
+    height: 30px;
+    text-transform: capitalize;
+    color: black;
+    background-color: lightgrey;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.dark-mode {
+    color: white;
+    background-color: black;
+    border: 1px solid grey;
+}

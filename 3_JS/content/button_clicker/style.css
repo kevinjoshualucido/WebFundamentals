@@ -83,7 +83,7 @@ span {
     text-decoration: underline;
 }
 
-.col-2 form {
+.col-2 .form {
     width: inherit;
     display: flex;
     justify-content: space-between;

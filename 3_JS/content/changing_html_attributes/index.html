@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pick One: Compact Sedans</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="mode-btn">
+            <button onclick="setDarkMode(this)">Switch to dark mode</button>
+        </div>
+        <h1 id="title">Compact Sedans</h1>
+        <div id="img-slider">
+            <div class="img-box">
+                <img onclick="pickHonda()" id="car">
+            </div>
+        </div>
+        <div id="name-box">
+            <div>
+                <h2 class="car-name">Pick A Car!</h2>
+            </div>
+        </div>
+        <div id="img-btn">
+            <button onclick="pickHonda(this)" onmouseover="hoverOver(this)" onmouseleave="hoverAway(this)">Car
+                #1</button>
+            <button onclick="pickMazda(this)" onmouseover="hoverOver(this)" onmouseleave="hoverAway(this)">Car #2</button>
+            <button onclick="pickSubaru(this)" onmouseover="hoverOver(this)" onmouseleave="hoverAway(this)">Car #3</button>
+        </div>
+    </div>
+
+    <!-- SCRIPT -->
+    <script src="script.js"></script>
+</body>
+
+</html>

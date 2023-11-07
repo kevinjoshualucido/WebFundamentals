@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Likes: Part II</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Network</h1>
+        </div>
+        <div class="content">
+            <div class="row feed">
+                <div class="col">
+                    <h1>Your Feed</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col profile">
+                    <img src="images/user-circle.png" alt="dp">
+                    <p><a href="#">Add an avatar</a></p>
+                    <h2>James Hunt</h2>
+                </div>
+                <div class="col-2">
+                    <div class="card">
+                        <div class="row">
+                            <div class="col">
+                                <h3>Some User</h3>
+                            </div>
+                            <div class="col like-count">
+                                <p><span id="counter-1">0</span> like(s)</p>
+                                <button class="btn" onclick="increaseLikeCount(0)">Like</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-area">
+                                <p>This is some filler text, it can say anthing we like</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="row">
+                            <div class="col">
+                                <h3>Some User</h3>
+                            </div>
+                            <div class="col like-count">
+                                <p><span class="counter-2">0</span> like(s)</p>
+                                <button class="btn" onclick="increaseLikeCount(1)">Like</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-area">
+                                <p>This is some filler text, it can say anthing we like</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="row">
+                            <div class="col">
+                                <h3>Some User</h3>
+                            </div>
+                            <div class="col like-count">
+                                <p><span class="counter-3">0</span> like(s)</p>
+                                <button class="btn" onclick="increaseLikeCount(2)">Like</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-area">
+                                <p>This is some filler text, it can say anthing we like</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
