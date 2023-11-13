@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billy's Blog</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <p class="site-title">Welcome to Billy's Blog!</p>
+        <div class="site-nav">
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Product</a>
+                <a href="#">Company</a>
+                <a href="#">Blog</a>
+            </nav>
+            <button class="cta-header" onclick="activeSub(this)">Subscribe to Newsletter</button>
+        </div>
+    </header>
+
+
+    <!-- content -->
+    <main>
+        <h1>On the topic of "heroes"</h1>
+        <p class="sub-title">Some thoughts on heroism by a retired hero | Billy</p>
+        <section>
+            <h2>Point One</h2>
+            <p class="article">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Blandit turpis cursus in hac habitasse platea dictumst. Scelerisque eu ultrices vitae auctor eu augue. At varius vel pharetra vel turpis nunc eget. Eleifend quam adipiscing vitae proin sagittis nisl rhoncus. Tristique senectus et netus et malesuada. Nunc non blandit massa enim nec dui nunc. Tristique senectus et netus et malesuada fames ac turpis. Nunc sed blandit libero volutpat sed. Eu lobortis elementum nibh tellus. Odio euismod lacinia at quis. Facilisi morbi tempus iaculis urna id volutpat lacus laoreet non. Magna sit amet purus gravida quis blandit turpis cursus. Scelerisque in dictum non consectetur a. Gravida dictum fusce ut placerat orci nulla. Potenti nullam ac tortor vitae purus faucibus ornare suspendisse. Eu lobortis elementum nibh tellus molestie.</p>
+        </section>
+        <section>
+            <h2>Point Two</h2>
+            <!-- article and form -->
+            <div class="row">
+                <div class="col">
+                    <p class="article two">Pellentesque pulvinar pellentesque habitant morbi tristique senectus et. Morbi tristique senectus et netus et malesuada fames ac. Diam sollicitudin tempor id eu. Mattis molestie a iaculis at erat pellentesque adipiscing commodo elit. Arcu non sodales neque sodales ut etiam sit amet nisl. Ullamcorper eget nulla facilisi etiam. Semper eget duis at tellus at urna condimentum mattis.</p>
+                    <ul>
+                        <li><span>Item One</span></li>
+                        <li><span>Item Two</span></li>
+                        <li><span>Item Three</span></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <form action="#" method="post">
+                        <p class="form-title">Ready to take a Hero Class?</p>
+                        <div class="name">
+                            <input type="text" placeholder="first name" id="fn">
+                            <input type="text" placeholder="last name" id="ln">
+                        </div>
+                        <div class="email">
+                            <input type="text" placeholder="email" id="email">
+                        </div>
+                        <button class="cta-main" onclick="alert(register())">Join Hero Class</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer></footer>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px cyan dashed; */
+    font-family: Roboto, sans-serif, system-ui;
+}
+
+/* header */
+
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: dodgerblue;
+}
+
+/* logo */
+
+.site-title {
+    font-weight: bold;
+    font-size: 36px;
+    cursor: default;
+}
+
+/* nav */
+
+.site-nav {
+    width: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: default;
+}
+/* links */
+nav a {
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    border-right: 2px solid black;
+}
+nav a:last-of-type {
+    border-right: none;
+}
+/* subscribe button */
+.cta-header {
+    font-size: 16px;
+    padding: 5px 10px;
+    background-color: lightgrey;
+    border: 2px solid black;
+    box-shadow: 3px 3px black;
+    position: relative;
+    bottom: 3px;
+    right: 3px;
+}
+.cta-header:hover {
+    background-color: darkgrey;
+    cursor: pointer;
+}
+
+/* main */
+
+main {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid black;
+}
+.row {
+    display: flex;
+}
+.col {
+    flex: 1;
+}
+section {
+    margin-top: 20px;
+}
+/* sub-title */
+.sub-title {
+    font-size: 24px;
+}
+/* articles */
+.article {
+    column-count: 2;
+    column-gap: 20px;
+    line-height: 25px;
+}
+.article.two {
+    column-count: 1;
+    padding-right: 10px;
+}
+/* article bullet points */
+section ul {
+    margin-top: 20px;
+    margin-left: 40px;
+    font-size: 18px;
+}
+section ul li {
+    line-height: 20px;
+    list-style-type:disc;
+    position: relative;
+    bottom: 10px;
+}
+section ul li span {
+    position: relative;
+    bottom: 4px;
+    left: -5px;
+}
+section ul li::marker {
+    font-size: 36px;
+    margin-right: 0px;
+}
+/* form */
+form {
+    text-align: center;
+    width: 100%;
+    padding: 0px 10px;
+}
+.form-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+}
+/* form inputs */
+.name {
+    display: flex;
+    justify-content: space-between;
+}
+.name input {
+    width: 45%;
+}
+.name input,
+.email input {
+    margin-top: 20px;
+    padding: 5px;
+    font-size: 18px;
+}
+.email {
+    display: flex;
+}
+.email input {
+    flex: 1;
+}
+/* cta main */
+.cta-main {
+    margin-top: 20px;
+    font-size: 16px;
+    padding: 5px 10px;
+    color: white;
+    background-color: green;
+    border: 2px solid black;
+    box-shadow: 3px 3px black;
+    position: relative;
+    bottom: 3px;
+    right: 3px;
+}
+.cta-main:hover {
+    background-color: darkgreen;
+    cursor: pointer;
+}
