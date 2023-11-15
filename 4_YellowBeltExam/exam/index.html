@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Sports News Network</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <!-- live stream score feed -->
+        <div class="live">
+            <p class="live-score-title">Live Scores</p>
+            <div class="live-score-board">
+                <ul>
+                    <li>SCJ Ninjas - 314</li>
+                    <li>NS Pirates - 219</li>
+                </ul>
+                <ul>
+                    <li>CHI Samuurai - 0</li>
+                    <li>TUL Wizards - 0</li>
+                </ul>
+                <ul>
+                    <li>BOS Hackers - 13</li>
+                    <li>TYO Youkai - 37</li>
+                </ul>
+                <ul>
+                    <li>BOI Knights - 5</li>
+                    <li>SEA Sea Lions - 11</li>
+                </ul>
+            </div>
+        </div>
+        <!-- header menu -->
+        <div class="menu">
+            <div class="wrapper">
+                <!-- logo -->
+                <div class="logo"><p>DSNN</p></div>
+                <!-- nav menu -->
+                <div class="site-nav">
+                    <nav>
+                        <a href="#">Football</a>
+                        <a href="#">Basketball</a>
+                        <a href="#">Baseball</a>
+                        <a href="#">"Soccer"</a>
+                        <a href="#">More...</a>
+                    </nav>
+                </div>
+                <!-- nav icons -->
+                <div class="icon-group">
+                    <img src="./images/search-light.png" alt="searchIcon" class="icon-s">
+                    <img src="./images/hamburger-light.png" alt="menuIcon" class="icon-s">
+                    <img src="./images/user-circle-light.png" alt="userIcon" class="icon-s">
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- main content -->
+    <main>
+        <div class="wrapper">
+            <div class="col-2">
+                <div class="card news-feed">
+                    <h2 class="top-stories">Top Stories</h2>
+                    <ul>
+                        <li><a href="#">Ninjas up big in 5th</a></li>
+                        <li><a href="#">Best sports cities</a></li>
+                        <li><a href="#">Choi joins Hall of Fame</a></li>
+                        <li><a href="#">Tournament underway</a></li>
+                        <li><a href="#">Samurais at Wizards...</a></li>
+                    </ul>
+                </div>
+                <div class="card cta">
+                    <h3 class="cta-header">Customize your DSNN</h3>
+                    <div class="cta-primary">
+                        <button class="cta-signin">Sign In</button>
+                        <button class="cta-signup">Sign Up</button>
+                    </div>
+                </div>
+                <div class="card subscribe">
+                    <h3>Never miss a play!</h3>
+                    <button class="cta-subscribe" onclick="activateSub()">Subscribe</button>
+                </div>
+            </div>
+            <div class="col-5">
+                <!-- live score of a game -->
+                <div class="card main-feed">
+                    <!-- main feed title -->
+                    <div class="main-title">
+                        <div class="live-icon">
+                            <span class="circle"></span>
+                            <p>Live</p>
+                        </div>
+                        <h1> Ninjas Leading Pirates</h1>
+                    </div>
+                    <!-- versus -->
+                    <div class="team-icons">
+                        <img src="./images/sjc-ninjas.png" alt="ninjas" class="col icon-l">
+                        <p class="col">vs</p>
+                        <img src="./images/ns-pirates.png" alt="ninjas" class="col icon-l">
+                    </div>
+                    <!-- scoreboard -->
+                    <div class="scoreboard">
+                        <!-- team -->
+                        <table class="col">
+                            <thead>
+                                <tr><td class="city">San Jose</td></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td class="team-name"><span class="color-1">Ninjas</span></td></tr>
+                                <tr><td class="team-record">(10W - 3L)</td></tr>
+                                <tr><td class="live-score"><span id="live-score-1" onclick="addPoint(0)">314</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- time clock -->
+                        <div class="col time-clock">
+                            <p>0:13 remaining</p>
+                            <p>5th period</p>
+                        </div>
+                        <!-- team -->
+                        <table class="col">
+                            <thead>
+                                <tr><td class="city">Nova Scotia</td></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td class="team-name"><span class="color-2">Pirates</span></td></tr>
+                                <tr><td class="team-record">(12W - 2L)</td></tr>
+                                <tr><td class="live-score"><span id="live-score-2" onclick="addPoint(1)">219</span></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="update">
+                        <p>A conservative match between the two top-performing sides in the Central League Division with a number 1 seed at stake... <a href="#">get live updates</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- script -->
+    <script src=./script.js></script>
+</body>
+
+</html>

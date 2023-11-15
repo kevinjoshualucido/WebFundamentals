@@ -19,10 +19,10 @@ console.log(badgeElement);
 
 // badge for connections
 var connectedBadgeElement = document.querySelector(".badge#connected");
-console.log(typeof (connectedBadgeElement));
+console.log(typeof(connectedBadgeElement));
 
 var connectedNum = parseInt(connectedBadgeElement.innerHTML);
-console.log(connectedNum);
+console.log(connectedNum); // 469
 
 function nameChange() {
     nameElement.innerHTML = "Kevin James";
@@ -35,6 +35,7 @@ function removeConnection(index) {
 function reduceRequest() {
     badgeElement.innerHTML = badgeRequestNum;
     badgeRequestNum--;
+    console.log(badgeRequestNum);
 }
 
 function addConnection() {
